@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de cambio de estado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #9F7AEA 0%, #68D391 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .content {
+            background-color: #ffffff;
+            padding: 30px;
+            border: 1px solid #E2E8F0;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(to right, #9F7AEA, #68D391);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(159,122,234,0.2);
+        }
+        .button:hover {
+            background: linear-gradient(to right, #805AD5, #48BB78);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px rgba(159,122,234,0.3);
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #666666;
+            font-size: 12px;
+        }
+        .highlight {
+            background-color: #F0FFF4;
+            border-left: 4px solid #68D391;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .footer a {
+            color: #9F7AEA;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #805AD5;
+            text-decoration: underline;
+        }
+        strong {
+            color: #4A5568;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nueva Aviso de cambio de Estado a ${status}</h1>
+        </div>
+        <div class="content">
+            <p>Hola ${user},</p>
+            
+            <p>Has sobrepasado las 24 horas de espera para unirte al grupo: <strong>"${Group_name}"</strong>.</p>
+            <p>Se te reasignará otro grupo, recibirás otro solicitud cuando tengas otro grupo.</p>
+            <p>Para revisar las solicitudes y tomar una decisión, haz clic en el siguiente enlace:</p>
+            
+            <div style="text-align: center;">
+                <a href="https://eklegein.net/grupos/solicitudes" class="button">Ver Solicitud de Grupo</a>
+            </div>
+            
+            <p>Si no puedes hacer clic en el botón, copia y pega el siguiente enlace en tu navegador:</p>
+            <p style="font-size: 12px;">https://eklegein.net/grupos/solicitudes</p>
+            
+        </div>
+        
+        <div class="footer">
+            <p>Este es un correo automático, por favor no respondas a este mensaje.</p>
+            <p>© 2025 Eklegein. Todos los derechos reservados.</p>
+            <p>
+                <a href="https://eklegein.net/privacidad">Política de Privacidad</a> | 
+                <a href="https://eklegein.net/terminos">Términos de Uso</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
